@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+<TextView
+    android:id="@+id/connect_us_fragment_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    style="@style/tv_more_style"
+    android:text="@string/connectUs" />
+
+    <EditText
+        android:id="@+id/connect_us_fragment_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_60dp"
+        android:layout_below="@id/connect_us_fragment_text"
+        android:hint="@string/allName"
+        style="@style/connect_us_et_style"/>
+    <EditText
+        android:id="@+id/connect_us_fragment_et_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_60dp"
+        android:layout_below="@id/connect_us_fragment_et_name"
+        android:hint="@string/email"
+        style="@style/connect_us_et_style"/>
+    <EditText
+        android:id="@+id/connect_us_fragment_et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_60dp"
+        android:layout_below="@id/connect_us_fragment_et_email"
+        android:hint="@string/phone"
+        style="@style/connect_us_et_style"/>
+    <EditText
+        android:id="@+id/connect_us_fragment_et_massege"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_150dp"
+        android:layout_below="@id/connect_us_fragment_et_phone"
+        android:hint="@string/massege"
+        style="@style/connect_us_et_style"
+        android:gravity="top"
+        android:paddingTop="@dimen/dim_10dp"/>
+
+        <RadioGroup
+            android:id="@+id/connect_us_fragment_rg_group"
+            android:layout_below="@id/connect_us_fragment_et_massege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_20dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+            <RadioButton
+                android:id="@+id/connect_us_fragment_rb_complaint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/complaint"
+                android:textColor="@color/colorAccent" />
+
+            <RadioButton
+                android:id="@+id/connect_us_fragment_rb_suggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suggestion"
+                android:textColor="@color/colorAccent" />
+
+            <RadioButton
+                android:id="@+id/connect_us_fragment_rb_inquiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inquiry"
+                android:textColor="@color/colorAccent" />
+
+        </RadioGroup>
+<Button
+    android:id="@+id/connect_us_fragment_btn_send"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/btn1_style"
+    android:layout_below="@id/connect_us_fragment_rg_group"
+    android:text="@string/send"
+    android:layout_marginBottom="@dimen/dim_20dp"/>
+     </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

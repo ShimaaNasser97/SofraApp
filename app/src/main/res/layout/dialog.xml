@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:background="@color/colorPrimaryDark">
+    <TextView
+        android:id="@+id/my_category_fragment_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/tv_more_style"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/album_dp_20"
+        android:text="@string/التصنيف"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/my_category_fragment_iv_image"
+        android:layout_width="@dimen/dim_100dp"
+        android:layout_height="@dimen/dim_100dp"
+        android:layout_below="@id/my_category_fragment_tv_text"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/et_shap"
+        android:src="@drawable/ic_plus"/>
+    <EditText
+        android:id="@+id/my_category_fragment_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_45dp"
+        android:layout_below="@id/my_category_fragment_iv_image"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:background="@drawable/et_shap"
+        android:layout_marginEnd="@dimen/dim_10dp"
+        android:layout_marginStart="@dimen/dim_10dp"
+        android:hint="@string/categoryName"
+        android:paddingStart="@dimen/dim_10dp"
+        android:paddingEnd="@dimen/dim_10dp"/>
+    <Button
+        android:id="@+id/my_category_fragment_btn_added"
+        android:layout_width="@dimen/album_dp_200"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_butten_shape"
+        android:layout_below="@id/my_category_fragment_et_name"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:text="اضف"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

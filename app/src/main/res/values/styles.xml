@@ -1,0 +1,140 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="btn1_style">btn1_style
+        <item name="android:background">@drawable/btn_shape</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dim_20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dim_30dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_150dp</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="text1_style">text1_style
+       <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dim_20sp</item>
+        <item name="android:layout_marginTop">@dimen/dim_70dp</item>
+    </style>
+
+    <style name="et1_style">et_style
+        <item name="android:layout_marginTop">@dimen/dim_30dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_30dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_30dp</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@null</item>
+
+    </style>
+
+    <style name="et2_style">et2_style
+        <item name="android:layout_marginStart">@dimen/dim_30dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_30dp</item>
+        <item name="android:background">@drawable/et_shap</item>
+        <item name="android:paddingStart">@dimen/dim_20dp</item>
+        <item name="android:paddingEnd">@dimen/dim_20dp</item>
+
+    </style>
+
+    <style name="text2_style">text2_style
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginStart">@dimen/dim_30dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dim_20sp</item>
+        <item name="android:layout_marginTop">@dimen/dim_50dp</item>
+
+    </style>
+
+    <style name="iv_white_line">iv_white_line
+    <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dim_30dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_30dp</item>
+        <item name="android:layout_marginTop">@dimen/dim_100dp</item>
+        <item name="android:src">@color/white</item>
+    </style>
+
+    <style name="iv2_white_line">iv2_white_line
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dim_1dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_30dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_30dp</item>
+        <item name="android:layout_marginTop">@dimen/dim_55dp</item>
+        <item name="android:src">@color/white</item>
+    </style>
+
+    <style name="et3_shape">et3_style
+    <item name="android:layout_marginTop">@dimen/dim_20dp</item>
+    <item name="android:layout_marginStart">@dimen/dim_20dp</item>
+    <item name="android:layout_marginEnd">@dimen/dim_20dp</item>
+    <item name="android:background">@drawable/et2_shap</item>
+        <item name="android:paddingStart">@dimen/dim_20dp</item>
+        <item name="android:paddingEnd">@dimen/dim_20dp</item>
+    </style>
+<style name="tv_more_style">tv_more_style
+<item name="android:textColor">@color/colorAccent</item>
+    <item name="android:textSize">@dimen/dim_20sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_marginTop">@dimen/dim_10dp</item>
+    <item name="android:layout_marginStart">@dimen/dim_10dp</item>
+</style>
+
+    <style name="connect_us_et_style">connect_us_et_style
+    <item name="android:background">@drawable/connect_et_shap</item>
+     <item name="android:layout_marginTop">@dimen/dim_20dp</item>
+        <item name="android:paddingEnd">@dimen/dim_20dp</item>
+        <item name="android:paddingStart">@dimen/dim_20dp</item>
+    </style>
+
+    <style name="connect_us_cbx_style">connect_us_cbx_style
+        <item name="android:layout_marginStart">@dimen/dim_5dp</item>
+        <item name="android:background">@drawable/connect_et_shap</item>
+        <item name="android:button">@drawable/connect_type_item</item>
+    </style>
+
+    <style name="recycle_style">recycle_style
+         <item name="android:layout_marginStart">@dimen/dim_10dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_10dp</item>
+        <item name="android:layout_marginTop">@dimen/dim_10dp</item>
+    </style>
+
+    <style name="tv_more_text_style">tv_more_text_style
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/dim_20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/dim_10dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_10dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="iv_information_line">iv_information_line
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/album_dp_1</item>
+        <item name="android:layout_marginStart">@dimen/dim_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_20dp</item>
+        <item name="android:layout_marginTop">@dimen/dim_10dp</item>
+        <item name="android:src">@color/dark_gray</item>
+    </style>
+
+    <style name="linear_information_style">linear_information_style
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dim_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_20dp</item>
+        <item name="android:layout_marginTop">@dimen/dim_20dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+</resources>

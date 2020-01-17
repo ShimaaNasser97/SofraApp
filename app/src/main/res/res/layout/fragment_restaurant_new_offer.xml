@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/restaurant_new_offer_fragment_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/tv_more_text_style"
+    android:text="@string/addNewOffer" />
+
+    <ImageView
+        android:id="@+id/restaurant_new_offer_fragment_iv_photo"
+        android:layout_width="@dimen/dim_100dp"
+        android:layout_height="@dimen/album_dp_100"
+        android:background="@drawable/image_new_item_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/restaurant_new_offer_fragment_text"
+        android:layout_marginTop="@dimen/dim_10dp"/>
+    <EditText
+        android:id="@+id/restaurant_new_offer_fragment_name"
+        android:layout_below="@id/restaurant_new_offer_fragment_iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_65dp"
+        android:background="@drawable/linear_shap"
+        android:layout_marginTop="@dimen/dim_10dp"/>
+
+    <EditText
+        android:id="@+id/restaurant_new_offer_fragment_et_description"
+        android:layout_below="@id/restaurant_new_offer_fragment_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_150dp"
+        android:background="@drawable/linear_shap"
+        android:layout_marginTop="@dimen/dim_10dp"/>
+    <LinearLayout
+        android:id="@+id/restaurant_new_offer_fragment_ll_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restaurant_new_offer_fragment_et_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim_10dp">
+        <EditText
+            android:id="@+id/restaurant_new_offer_fragment_et_from"
+            android:layout_width="@dimen/dim_120dp"
+            android:layout_height="@dimen/dim_50dp"
+            android:background="@drawable/image_new_item_shape"
+            android:drawableStart="@drawable/ic_date"
+            android:paddingStart="@dimen/dim_10dp"
+            android:paddingEnd="@dimen/dim_10dp"
+            android:layout_marginEnd="@dimen/dim_30dp"
+            android:hint="@string/from"/>
+        <EditText
+            android:id="@+id/restaurant_new_offer_fragment_et_to"
+            android:layout_width="@dimen/dim_120dp"
+            android:layout_height="@dimen/dim_50dp"
+            android:background="@drawable/image_new_item_shape"
+            android:drawableStart="@drawable/ic_date"
+            android:paddingStart="@dimen/dim_10dp"
+            android:paddingEnd="@dimen/dim_10dp"
+            android:hint="@string/to"
+            android:layout_marginStart="@dimen/dim_30dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/restaurant_new_offer_fragment_btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btn1_style"
+        android:layout_below="@id/restaurant_new_offer_fragment_ll_linear"
+        android:text="@string/add"/>
+</RelativeLayout>

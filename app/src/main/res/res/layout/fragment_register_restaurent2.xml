@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <TextView
+        android:id="@+id/register_restaurant2_fragment_tv_text_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text2_style"
+        android:text="@string/text_data"/>
+
+    <EditText
+        android:id="@+id/register_restaurant2_fragment_et_phone"
+        android:layout_below="@id/register_restaurant2_fragment_tv_text_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        android:layout_marginTop="@dimen/dim_30dp"
+        style="@style/et1_style" />
+
+    <ImageView
+        android:layout_below="@id/register_restaurant2_fragment_tv_text_data"
+        style="@style/iv2_white_line" />
+
+    <EditText
+        android:id="@+id/register_restaurant2_fragment_et_whates"
+        android:layout_below="@id/register_restaurant2_fragment_et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="الواتس اب"
+        android:layout_marginTop="@dimen/dim_30dp"
+        style="@style/et1_style" />
+    <ImageView
+        android:layout_below="@id/register_restaurant2_fragment_et_phone"
+        style="@style/iv2_white_line" />
+
+    <TextView
+        android:id="@+id/register_restaurant2_fragment_tv_image"
+        android:layout_below="@id/register_restaurant2_fragment_et_whates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whates"
+        style="@style/text2_style"/>
+    <ImageView
+        android:id="@+id/register_restaurant2_fragment_iv_image"
+        android:layout_below="@id/register_restaurant2_fragment_tv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emage"
+        android:background="@drawable/iv_shape"
+        android:padding="@dimen/dim_10dp"
+        android:layout_marginStart="@dimen/dim_30dp"/>
+
+    <Button
+        android:id="@+id/register_restaurant2_fragment_btn_sinup"
+        android:layout_below="@id/register_restaurant2_fragment_iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btn1_style"
+        android:text="@string/register"/>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
+<TextView
+    android:id="@+id/comment_fragment_tv_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="اختار تقييمك"
+    style="@style/tv_more_style"
+    android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/comment_fragment_ll_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_fragment_tv_text"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_10dp"
+        android:layout_marginStart="@dimen/dim_10dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/comment_fragment_iv_like"
+            android:layout_width="@dimen/dim_50dp"
+            android:layout_height="@dimen/dim_50dp"
+            android:background="@drawable/ic_love"
+            android:layout_marginEnd="@dimen/dim_5dp"/>
+        <ImageView
+            android:id="@+id/comment_fragment_iv_very_happy"
+            android:layout_width="@dimen/dim_50dp"
+            android:layout_height="@dimen/dim_50dp"
+            android:background="@drawable/ic_very_happy"
+            android:layout_marginEnd="@dimen/dim_5dp"/>
+        <ImageView
+            android:id="@+id/comment_fragment_iv_happy"
+            android:layout_width="@dimen/dim_50dp"
+            android:layout_height="@dimen/dim_50dp"
+            android:background="@drawable/ic_happy"
+            android:layout_marginEnd="@dimen/dim_5dp"/>
+        <ImageView
+            android:id="@+id/comment_fragment_iv_sad"
+            android:layout_width="@dimen/dim_50dp"
+            android:layout_height="@dimen/dim_50dp"
+            android:background="@drawable/ic_sad"
+            android:layout_marginEnd="@dimen/dim_5dp"/>
+        <ImageView
+            android:id="@+id/comment_fragment_iv_angry"
+            android:layout_width="@dimen/dim_50dp"
+            android:layout_height="@dimen/dim_50dp"
+            android:background="@drawable/ic_angry" />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/comment_fragment_et_comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_150dp"
+        android:layout_below="@id/comment_fragment_ll_linear"
+        android:layout_marginTop="@dimen/album_dp_40"
+        android:background="@drawable/linear_shap"
+        android:hint="اضف تعليقك هنا"
+        android:gravity="top"
+        android:paddingEnd="@dimen/dim_20dp"
+        android:paddingStart="@dimen/dim_20dp"
+        android:paddingTop="@dimen/dim_10dp"/>
+    <Button
+        android:id="@+id/comment_fragment_btn_add_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btn1_style"
+        android:background="@drawable/btn_shape"
+        android:layout_below="@id/comment_fragment_et_comment"
+        android:text="اضف"
+        android:layout_marginBottom="@dimen/dim_20dp"/>
+</RelativeLayout>

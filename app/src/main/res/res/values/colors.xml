@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4057</color>
+    <color name="colorPrimaryDark">#E5E5E5</color>
+    <color name="colorAccent">#240041</color>
+    <color name="green">#009523</color>
+    <color name="white">#fff</color>
+    <color name="color">#876274</color>
+    <color name="btn_strart_color">#9C0849</color>
+    <color name="btn_end_color">#CA2E45</color>
+    <color name="font_color">#1B062B</color>
+    <color name="font_color2">#9A9A9A</color>
+    <color name="dark_gray">#B0B2B6</color>
+    <color name="tap1_color">#F5F5F5</color>
+    <color name="black">#000</color>
+    <color name="connect_us_et_color">#F5F5F5</color>
+</resources>

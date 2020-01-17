@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/reject_dialige_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/rejectResoun"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/dim_20sp"
+        android:layout_marginTop="@dimen/dim_20dp"/>
+
+    <EditText
+        android:id="@+id/reject_dialige_et_content"
+        android:layout_below="@id/reject_dialige_tv_text"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:layout_marginStart="@dimen/dim_10dp"
+        android:layout_marginEnd="@dimen/dim_10dp"
+        android:paddingStart="@dimen/dim_20dp"
+        android:paddingTop="@dimen/dim_20dp"
+        android:paddingEnd="@dimen/dim_20dp"
+        android:background="@drawable/et_shap"
+        android:hint="@string/enterRejectResone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_150dp"
+        android:gravity="top"/>
+
+    <Button
+        android:id="@+id/reject_dialige_btn_cancel"
+        android:layout_below="@id/reject_dialige_et_content"
+        android:layout_marginBottom="@dimen/dim_30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel2"
+        style="@style/btn1_style"/>
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/register_clint_fragment_iv_imege"
+        android:layout_width="@dimen/dim_100dp"
+        android:layout_height="@dimen/dim_100dp"
+        android:src="@drawable/emage"
+        android:padding="@dimen/dim_10dp"
+        android:background="@drawable/iv_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim_30dp"/>
+
+    <EditText
+        android:id="@+id/register_clint_fragment_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_clint_fragment_iv_imege"
+        android:hint="@string/name"
+        android:background="@null"
+        style="@style/et1_style"
+        android:drawableEnd="@drawable/ic_name"/>
+    <ImageView
+        android:layout_below="@id/register_clint_fragment_iv_imege"
+        style="@style/iv2_white_line" />
+
+
+
+    <EditText
+        android:id="@+id/register_clint_fragment_et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_clint_fragment_et_name"
+        android:hint="@string/email"
+        android:background="@null"
+        style="@style/et1_style"
+        android:drawableEnd="@drawable/ic_email_icon"/>
+
+    <ImageView
+        android:layout_below="@id/register_clint_fragment_et_name"
+        style="@style/iv2_white_line" />
+
+
+    <EditText
+        android:id="@+id/register_clint_fragment_et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_clint_fragment_et_email"
+        android:hint="@string/phone"
+        android:background="@null"
+        style="@style/et1_style"
+        android:drawableEnd="@drawable/ic_phone"/>
+
+    <ImageView
+        android:layout_below="@id/register_clint_fragment_et_email"
+        style="@style/iv2_white_line" />
+
+    <Spinner
+        android:id="@+id/register_clint_fragment_sp_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_clint_fragment_et_phone"
+        android:hint="@string/city"
+        android:layout_marginStart="@dimen/dim_30dp"
+        android:layout_marginTop="@dimen/dim_30dp"
+        android:layout_marginEnd="@dimen/dim_30dp"
+        android:drawableEnd="@drawable/ic_home"/>
+    <ImageView
+        android:layout_below="@id/register_clint_fragment_et_phone"
+        style="@style/iv2_white_line" />
+
+    <Spinner
+        android:id="@+id/register_clint_fragment_sp_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_clint_fragment_sp_city"
+        android:layout_marginStart="@dimen/dim_30dp"
+        android:layout_marginTop="@dimen/dim_30dp"
+        android:layout_marginEnd="@dimen/dim_30dp"
+        android:drawableEnd="@drawable/ic_home"/>
+    <ImageView
+        android:layout_below="@id/register_clint_fragment_sp_city"
+        style="@style/iv2_white_line" />
+
+
+    <EditText
+        android:id="@+id/register_clint_fragment_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_clint_fragment_sp_region"
+        android:hint="@string/password"
+        android:background="@null"
+        style="@style/et1_style"
+        android:drawableEnd="@drawable/ic_password"
+        />
+    <ImageView
+        android:layout_below="@id/register_clint_fragment_sp_region"
+        style="@style/iv2_white_line" />
+
+
+    <EditText
+        android:id="@+id/register_clint_fragment_et_verify_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_clint_fragment_et_password"
+        android:hint="@string/verify_pass"
+        android:background="@null"
+        style="@style/et1_style"
+        android:drawableEnd="@drawable/ic_password"/>
+    <ImageView
+        android:layout_below="@id/register_clint_fragment_et_password"
+        style="@style/iv2_white_line" />
+
+
+    <Button
+        android:id="@+id/register_clint_fragment_btn_register"
+        android:layout_below="@id/register_clint_fragment_et_verify_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btn1_style"
+        android:text="@string/register"/>
+
+</RelativeLayout>

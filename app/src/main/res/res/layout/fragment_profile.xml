@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_fragment_iv_imege"
+                android:layout_width="@dimen/dim_100dp"
+                android:layout_height="@dimen/dim_100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_30dp"
+                android:padding="@dimen/dim_10dp"
+                android:src="@drawable/emage" />
+
+            <EditText
+                android:id="@+id/profile_fragment_et_name"
+                android:drawableStart="@drawable/ic_name2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_45dp"
+                android:layout_below="@id/profile_fragment_iv_imege"
+                style="@style/et3_shape" />
+
+            <EditText
+                android:id="@+id/profile_fragment_et_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_45dp"
+                style="@style/et3_shape"
+                android:drawableStart="@drawable/ic_email2"
+                android:layout_below="@id/profile_fragment_et_name" />
+
+            <EditText
+                android:id="@+id/profile_fragment_et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_45dp"
+                android:drawableStart="@drawable/ic_phone2"
+                style="@style/et3_shape"
+                android:layout_below="@id/profile_fragment_et_email" />
+
+               <LinearLayout
+                   android:id="@+id/profile_fragment_ll_contaer"
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/dim_45dp"
+                   android:layout_below="@id/profile_fragment_et_phone"
+                   style="@style/et3_shape"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="@dimen/dim_30dp"
+                       android:layout_height="@dimen/dim_30dp"
+                       android:layout_marginTop="@dimen/dim_10dp"
+                       android:background="@drawable/ic_home2" />
+
+                   <Spinner
+                       android:id="@+id/profile_fragment_sp_city"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent" />
+
+               </LinearLayout>
+            <LinearLayout
+                android:id="@+id/profile_fragment_ll_contaer2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_45dp"
+                android:layout_below="@id/profile_fragment_ll_contaer"
+                style="@style/et3_shape"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dim_30dp"
+                    android:layout_height="@dimen/dim_30dp"
+                    android:layout_marginTop="@dimen/dim_10dp"
+                    android:background="@drawable/ic_home2" />
+
+                <Spinner
+                    android:id="@+id/profile_fragment_sp_regione"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/profile_fragment_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_45dp"
+                android:drawableStart="@drawable/ic_lock2"
+                style="@style/et3_shape"
+                android:layout_below="@id/profile_fragment_ll_contaer2" />
+
+            <EditText
+                android:id="@+id/profile_fragment_et_mincharge"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_45dp"
+                android:drawableStart="@drawable/ic_flag2"
+                style="@style/et3_shape"
+                android:layout_below="@id/profile_fragment_et_password" />
+            <EditText
+                android:id="@+id/profile_fragment_et_cost"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_45dp"
+                android:drawableStart="@drawable/ic_flag2"
+                style="@style/et3_shape"
+                android:layout_below="@id/profile_fragment_et_mincharge" />
+           <LinearLayout
+               android:id="@+id/profile_fragment_ll_contaner3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/profile_fragment_et_cost"
+               android:layout_marginStart="@dimen/dim_20dp"
+               android:layout_marginTop="@dimen/dim_20dp"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/state"
+                   android:textSize="@dimen/album_sp_20"
+                   android:textColor="@color/colorAccent"/>
+
+               <Switch
+                   android:id="@+id/profile_fragment_sw_state"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginStart="@dimen/dim_20dp"/>
+           </LinearLayout>
+            <TextView
+                android:id="@+id/profile_fragment_tx_connection"
+                android:layout_below="@id/profile_fragment_ll_contaner3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/connnection_data"
+                android:textSize="@dimen/album_sp_20"
+                android:textColor="@color/colorAccent"
+                android:layout_marginStart="@dimen/dim_20dp"
+                android:layout_marginTop="@dimen/dim_20dp"/>
+
+            <EditText
+                android:id="@+id/profile_fragment_et_whats"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_45dp"
+                android:drawableStart="@drawable/ic_phone2"
+                style="@style/et3_shape"
+                android:layout_below="@id/profile_fragment_tx_connection" />
+
+            <Button
+                android:id="@+id/profile_fragment_btn_update"
+                style="@style/btn1_style"
+                android:layout_below="@id/profile_fragment_et_whats"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/btn_shape"
+                android:text="تعديل" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

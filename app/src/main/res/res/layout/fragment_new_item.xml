@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/new_item_fragment_tv_titel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim_20sp"
+        android:text="اضافة صورة للمنتج"
+        android:textSize="@dimen/dim_20sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/new_item_fragment_civ_photo"
+        android:layout_width="@dimen/dim_100dp"
+        android:layout_height="@dimen/album_dp_80"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/new_item_fragment_tv_titel"
+        android:layout_marginTop="@dimen/dim_10dp"
+        android:background="@drawable/image_new_item_shape"/>
+
+    <EditText
+        android:id="@+id/new_item_fragment_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_50dp"
+        android:layout_below="@id/new_item_fragment_civ_photo"
+        android:layout_marginTop="@dimen/dim_10dp"
+        android:background="@drawable/linear_shap"
+        android:hint="اسم المنتج"
+        android:paddingStart="@dimen/dim_20dp"/>
+    <EditText
+        android:id="@+id/new_item_fragment_et_description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_100dp"
+        android:layout_below="@id/new_item_fragment_et_name"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:background="@drawable/linear_shap"
+        android:hint="وصف مختصر"
+        android:paddingStart="@dimen/dim_10dp"/>
+    <EditText
+        android:id="@+id/new_item_fragment_et_price"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_50dp"
+        android:layout_below="@id/new_item_fragment_et_description"
+        android:layout_marginTop="@dimen/dim_10dp"
+        android:background="@drawable/linear_shap"
+        android:hint="السعر"
+        android:paddingStart="@dimen/dim_20dp"/>
+    <EditText
+        android:id="@+id/new_item_fragment_et_offer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_50dp"
+        android:layout_below="@id/new_item_fragment_et_price"
+        android:layout_marginTop="@dimen/dim_10dp"
+        android:background="@drawable/linear_shap"
+        android:hint="السعر فى العرض"
+        android:paddingStart="@dimen/dim_20dp"/>
+
+    <Button
+        android:id="@+id/login_fragment_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_item_fragment_et_offer"
+        style="@style/btn1_style"
+        android:text="اضف"/>
+</RelativeLayout>

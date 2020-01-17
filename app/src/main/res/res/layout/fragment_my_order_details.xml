@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_order_details_fragment_rv_details"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/my_order_details_fragment_tv_text"
+        android:layout_below="@id/my_order_details_fragment_rv_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        style="@style/tv_more_style"
+        android:text="@string/totai"
+        android:layout_marginTop="@dimen/dim_20dp"/>
+    <TextView
+        android:id="@+id/my_order_details_fragment_tv_total"
+        android:layout_below="@id/my_order_details_fragment_tv_text"
+        android:layout_width="@dimen/dim_100dp"
+        android:layout_height="@dimen/dim_100dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        style="@style/tv_more_style"
+        android:background="@drawable/circil_shape"
+        android:layout_marginTop="@dimen/dim_20dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/my_order_details_fragment_tv_total"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:layout_marginBottom="@dimen/dim_30dp">
+        <Button
+            android:id="@+id/my_order_details_fragment_btn_confirm"
+            android:layout_width="@dimen/dim_150dp"
+            android:layout_height="@dimen/album_dp_35"
+            android:background="@drawable/btn_shape"
+            android:layout_marginEnd="@dimen/dim_10dp"
+            android:text="@string/confirmOrder"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/my_order_details_fragment_btn_add"
+            android:layout_width="@dimen/dim_150dp"
+            android:layout_height="@dimen/album_dp_35"
+            android:background="@drawable/btn_shape"
+            android:layout_marginStart="@dimen/dim_10dp"
+            android:text="@string/addMore"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

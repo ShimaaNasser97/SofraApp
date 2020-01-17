@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/comment_fragment_tx_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/comment"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/dim_10dp"
+    android:textSize="@dimen/dim_20sp"
+    android:textColor="@color/colorAccent" />
+    <Button
+        android:id="@+id/comment_fragment_btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_fragment_tx_text"
+        style="@style/btn1_style"
+        android:text="@string/add_comment"/>
+    <ImageView
+        android:id="@+id/comment_fragment_iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_1"
+        android:layout_below="@id/comment_fragment_btn_add"
+       android:layout_marginTop="@dimen/dim_10dp"
+        android:layout_marginEnd="@dimen/dim_10dp"
+        android:layout_marginStart="@dimen/dim_10dp"
+        android:background="@color/dark_gray"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/comment_fragment_rv_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/comment_fragment_iv_image"
+        android:layout_marginTop="@dimen/dim_10dp"
+        android:layout_marginStart="@dimen/dim_10dp"
+        android:layout_marginEnd="@dimen/dim_10dp">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/dim_4dp"
+    android:layout_marginEnd="@dimen/dim_4dp"
+    android:background="@null"
+    app:dragEdge="left"
+    app:mode="same_level">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim_100dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+    <Button
+        android:id="@+id/item_home1_btn_edit"
+        android:layout_width="@dimen/album_dp_40"
+        android:layout_height="@dimen/album_dp_40"
+        android:background="@drawable/ic_edit"/>
+    <Button
+        android:id="@+id/item_home1_btn_delete"
+        android:layout_width="@dimen/album_dp_40"
+        android:layout_height="@dimen/album_dp_40"
+        android:background="@drawable/ic_delete"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_shape">
+        <LinearLayout
+            android:id="@+id/item_home2_ll_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:layout_marginBottom="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_16dp"
+            android:background="@drawable/image_shape">
+            <ImageView
+                android:id="@+id/item_home2_iv_image"
+                android:layout_width="@dimen/dim_100dp"
+                android:layout_height="@dimen/album_dp_80" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/item_home2_ll_image"
+            android:layout_marginEnd="@dimen/dim_16dp">
+
+            <TextView
+                android:id="@+id/item_home2_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lhfoyfolfjhdsds"
+                android:textSize="@dimen/dim_20sp"
+                android:textStyle="bold"
+                android:textColor="@color/font_color"
+                android:layout_marginBottom="@dimen/dim_10dp"/>
+
+            <TextView
+                android:id="@+id/item_home2_tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="yflylfflhfk"
+                android:textColor="@color/font_color2"
+                android:textSize="@dimen/dim_15sp"
+                android:layout_marginStart="@dimen/album_dp_0"
+                android:layout_marginBottom="@dimen/dim_10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/dim_16dp">
+
+            <TextView
+                android:id="@+id/item_home2_tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lhfoyug"
+                android:textColor="@color/font_color"
+                android:textSize="@dimen/dim_15sp"
+                android:layout_marginBottom="@dimen/dim_10dp"/>
+
+            <TextView
+                android:id="@+id/item_home2_tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="glfflflljh"
+                android:textColor="@color/font_color"
+                android:textSize="@dimen/dim_15sp"
+                android:layout_marginStart="@dimen/album_dp_0"
+                android:layout_marginBottom="@dimen/dim_10dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

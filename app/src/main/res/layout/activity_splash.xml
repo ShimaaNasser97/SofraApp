@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/sp2"
+    android:layout_marginTop="-60dp"
+    android:layout_marginStart="-60dp"/>
+
+    <ImageView
+        android:id="@+id/splash_activity_iv_logo"
+        android:layout_width="@dimen/dim_250dp"
+        android:layout_height="@dimen/dim_250dp"
+        android:src="@drawable/sofra_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"/>
+
+    <Button
+        android:id="@+id/splash_activity_btn_order"
+        android:layout_below="@id/splash_activity_iv_logo"
+        android:text="@string/food_order"
+        style="@style/btn1_style"
+        />
+
+    <Button
+        android:id="@+id/splash_activity_btn_bay"
+        android:layout_below="@id/splash_activity_btn_order"
+        android:text="@string/food_bay"
+        style="@style/btn1_style" />
+    <ImageView
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sp1"
+        android:layout_marginBottom="-110dp"
+        android:layout_marginEnd="-110dp"/>
+
+
+
+</RelativeLayout>

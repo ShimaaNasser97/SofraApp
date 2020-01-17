@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_fragment_iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/poto_item_restaurant"
+        android:layout_marginEnd="@dimen/dim_10dp"
+        android:layout_marginStart="@dimen/dim_10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_120dp"
+            android:layout_below="@id/item_fragment_iv_photo"
+            android:background="@drawable/linear_shap"
+            android:layout_marginTop="-10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_fragment_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_20dp"
+                android:layout_marginStart="@dimen/dim_20dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_sp_20"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/item_fragment_tv_discreption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/dim_20dp">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=": السعر"
+                     android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/item_fragment_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": سعر العرض"
+                    android:layout_marginStart="@dimen/dim_10dp"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/item_fragment_tv_offer_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

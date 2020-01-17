@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/my_order_fragment_iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/poto_item_restaurant"
+        android:layout_marginTop="@dimen/dim_10dp"
+        android:layout_marginEnd="@dimen/dim_10dp"
+        android:layout_marginStart="@dimen/dim_10dp"/>
+    <LinearLayout
+        android:id="@+id/my_order_fragment_ll_lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_120dp"
+        android:layout_below="@id/my_order_fragment_iv_photo"
+        android:background="@drawable/linear_shap"
+        android:layout_marginTop="-10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/my_order_fragment_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_20dp"
+            android:layout_marginStart="@dimen/dim_20dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/album_sp_20"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/my_order_fragment_tv_discreption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/dim_20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": السعر"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/my_order_fragment_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": سعر العرض"
+                android:layout_marginStart="@dimen/dim_10dp"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/my_order_fragment_tv_offer_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/my_order_fragment_tv_text"
+        android:layout_below="@id/my_order_fragment_ll_lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="طلب خاص"
+        android:layout_marginTop="@dimen/dim_10dp"
+        android:textSize="@dimen/album_sp_20"
+        android:textColor="@color/colorAccent"/>
+
+<ImageView
+    android:id="@+id/my_order_fragment_iv_imege1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/album_dp_1"
+    android:layout_below="@id/my_order_fragment_tv_text"
+    android:layout_marginTop="@dimen/dim_10dp"
+    android:background="@color/black"
+    android:layout_marginEnd="@dimen/dim_10dp"
+    android:layout_marginStart="@dimen/dim_10dp"/>
+    <RelativeLayout
+        android:id="@+id/my_order_fragment_ll_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_120dp"
+        android:layout_below="@id/my_order_fragment_iv_imege1"
+        android:layout_marginTop="@dimen/dim_10dp"
+        android:background="@drawable/linear_shap">
+<EditText
+    android:id="@+id/my_category_fragment_et_spicial_order"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dim_10dp"
+    android:layout_marginEnd="@dimen/dim_10dp"
+    android:hint="ادخل طلبك هنا"
+    android:layout_alignParentRight="true"
+    android:background="@null"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/my_order_fragment_iv_imege2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_1"
+        android:layout_below="@id/my_order_fragment_ll_linear"
+        android:layout_marginTop="@dimen/dim_10dp"
+        android:background="@color/black"
+        android:layout_marginEnd="@dimen/dim_10dp"
+        android:layout_marginStart="@dimen/dim_10dp"/>
+    <RelativeLayout
+        android:id="@+id/my_order_fragment_rl_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_order_fragment_iv_imege2"
+        android:layout_marginTop="@dimen/dim_10dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/dim_10dp"
+        android:layout_marginEnd="@dimen/dim_10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:textSize="@dimen/album_sp_20"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/my_order_fragment_tv_quantity"
+            android:layout_width="@dimen/dim_100dp"
+            android:layout_height="@dimen/dim_45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/linear_shap"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/dim_20sp"
+            android:text="0"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/my_order_fragment_btn_pluse"
+            android:layout_width="@dimen/album_dp_35"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circil_shape"
+            android:text="+"
+            android:textSize="@dimen/dim_20sp"
+            android:layout_marginEnd="@dimen/dim_20dp"
+            android:layout_toLeftOf="@id/my_order_fragment_tv_quantity"/>
+        <Button
+            android:id="@+id/my_order_fragment_btn_minus"
+            android:layout_width="@dimen/album_dp_35"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circil_shape"
+            android:layout_marginStart="@dimen/dim_20dp"
+            android:layout_toRightOf="@id/my_order_fragment_tv_quantity"
+            android:text="-"
+            android:textSize="@dimen/dim_20sp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/my_order_fragment_btn_enter"
+        android:layout_width="@dimen/dim_65dp"
+        android:layout_height="@dimen/dim_65dp"
+        android:layout_below="@id/my_order_fragment_rl_relative"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle_butten_shape" />
+    </RelativeLayout>

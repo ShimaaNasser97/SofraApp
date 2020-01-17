@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<TextView
+    android:id="@+id/new_order_fragment_tv_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/tv_more_text_style"
+    android:text="@string/orderDetails" />
+<EditText
+    android:id="@+id/new_order_fragment_et_details"
+    android:layout_below="@id/new_order_fragment_tv_text"
+    android:background="@drawable/circl_cluent_offer_shape"
+    android:layout_marginStart="@dimen/dim_10dp"
+    android:layout_marginEnd="@dimen/dim_10dp"
+    android:layout_marginTop="@dimen/dim_20dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_150dp" />
+<TextView
+    android:id="@+id/new_order_fragment_tv_text2"
+    android:layout_below="@id/new_order_fragment_et_details"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dim_20dp"
+    android:text="@string/adress"
+    style="@style/tv_more_style"/>
+<EditText
+    android:id="@+id/new_order_fragment_tv_adress"
+    android:layout_below="@id/new_order_fragment_tv_text2"
+    android:layout_marginStart="@dimen/dim_20dp"
+    android:layout_marginTop="@dimen/dim_20dp"
+    android:background="@drawable/et2_shap"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimary"
+    android:textSize="@dimen/dim_20sp"
+    android:layout_marginEnd="@dimen/dim_20dp"/>
+    <TextView
+        android:id="@+id/new_order_fragment_tv_text3"
+        android:layout_below="@id/new_order_fragment_tv_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:text="@string/bayment"
+        style="@style/tv_more_style"/>
+
+        <RelativeLayout
+            android:id="@+id/new_order_fragment_rl_relative"
+            android:layout_below="@id/new_order_fragment_tv_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_20dp"
+            android:layout_marginEnd="@dimen/dim_20dp"
+            android:layout_marginTop="@dimen/dim_20dp">
+            <TextView
+                android:id="@+id/new_order_fragment_tv_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash"
+                style="@style/tv_more_style" />
+            <TextView
+                android:id="@+id/new_order_fragment_tv_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/online"
+                style="@style/tv_more_style"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/new_order_fragment_rl_relative1"
+            android:layout_below="@id/new_order_fragment_rl_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_20dp"
+            android:layout_marginEnd="@dimen/dim_20dp"
+            android:layout_marginTop="@dimen/dim_20dp" >
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/new_order_fragment_iv_cash"
+                    android:layout_width="@dimen/dim_50dp"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:background="@drawable/circil_shape"
+                    android:button="@drawable/choose"
+                    android:layout_marginStart="@dimen/dim_30dp"/>
+            <RadioButton
+                android:id="@+id/new_order_fragment_iv_online"
+                android:layout_width="@dimen/dim_50dp"
+                android:layout_height="@dimen/dim_50dp"
+                android:background="@drawable/circil_shape"
+                android:button="@drawable/choose"
+                android:layout_marginStart="@dimen/album_dp_200"/>
+     </RadioGroup>
+
+  </RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/new_order_fragment_ll_linear"
+    android:layout_below="@id/new_order_fragment_rl_relative1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dim_20dp"
+    android:layout_marginStart="@dimen/dim_20dp"
+    android:layout_marginEnd="@dimen/dim_20dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total2"
+            style="@style/tv_more_style"/>
+        <TextView
+            android:id="@+id/new_order_fragment_tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_more_style"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tips"
+            style="@style/tv_more_style"/>
+        <TextView
+            android:id="@+id/new_order_fragment_tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_more_style"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/totai"
+            style="@style/tv_more_style"/>
+        <TextView
+            android:id="@+id/new_order_fragment_tv_all_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_more_style"/>
+    </LinearLayout>
+</LinearLayout>
+    <Button
+        android:id="@+id/new_order_fragment_btn_accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btn1_style"
+        android:layout_below="@id/new_order_fragment_ll_linear"
+        android:text="@string/confirmOrder"
+        android:layout_marginBottom="@dimen/dim_30dp"/>
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

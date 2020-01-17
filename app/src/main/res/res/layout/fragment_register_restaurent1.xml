@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <EditText
+        android:id="@+id/register_restaurant1_fragment_et_restaurent_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/restaurent_name"
+        android:layout_marginTop="@dimen/dim_45dp"
+        style="@style/et1_style" />
+
+    <ImageView
+        style="@style/iv2_white_line"
+        android:layout_marginTop="@dimen/dim_70dp"/>
+
+    <EditText
+        android:id="@+id/register_restaurant1_fragment_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_restaurant1_fragment_et_restaurent_name"
+        android:hint="@string/email"
+        android:layout_marginTop="@dimen/album_dp_35"
+        style="@style/et1_style" />
+
+    <ImageView
+        style="@style/iv2_white_line"
+        android:layout_below="@id/register_restaurant1_fragment_et_restaurent_name"
+        android:layout_marginTop="@dimen/dim_60dp" />
+
+    <EditText
+        android:id="@+id/register_restaurant1_fragment_et_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_restaurant1_fragment_email"
+        android:hint="@string/time"
+        android:layout_marginTop="@dimen/album_dp_35"
+        style="@style/et1_style" />
+    <ImageView
+        style="@style/iv2_white_line"
+        android:layout_below="@id/register_restaurant1_fragment_email"
+        android:layout_marginTop="@dimen/dim_60dp"/>
+
+    <Spinner
+        android:id="@+id/register_restaurant1_fragment_sp_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_restaurant1_fragment_et_time"
+        android:hint="@string/city"
+        android:layout_marginTop="@dimen/album_dp_35"
+        android:layout_marginStart="@dimen/dim_30dp"
+        android:layout_marginEnd="@dimen/dim_30dp"/>
+    <ImageView
+        style="@style/iv2_white_line"
+        android:layout_below="@id/register_restaurant1_fragment_et_time"
+        android:layout_marginTop="@dimen/dim_60dp"/>
+
+    <Spinner
+        android:id="@+id/register_restaurant1_fragment_sp_gavernment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_restaurant1_fragment_sp_city"
+        android:hint="@string/gavernment"
+        android:layout_marginTop="@dimen/album_dp_35"
+        android:layout_marginStart="@dimen/dim_30dp"
+        android:layout_marginEnd="@dimen/dim_30dp"/>
+    <ImageView
+        style="@style/iv2_white_line"
+        android:layout_below="@id/register_restaurant1_fragment_sp_city"
+        android:layout_marginTop="@dimen/dim_60dp"/>
+
+    <EditText
+        android:id="@+id/register_restaurant1_fragment_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_restaurant1_fragment_sp_gavernment"
+        android:hint="@string/password"
+        android:layout_marginTop="@dimen/album_dp_35"
+        style="@style/et1_style" />
+    <ImageView
+        style="@style/iv2_white_line"
+        android:layout_below="@id/register_restaurant1_fragment_sp_gavernment"
+        android:layout_marginTop="@dimen/dim_60dp"/>
+
+    <EditText
+        android:id="@+id/register_restaurant1_fragment_et_verify_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_restaurant1_fragment_et_password"
+        android:hint="@string/verify_pass"
+        android:layout_marginTop="@dimen/album_dp_35"
+        style="@style/et1_style" />
+    <ImageView
+        style="@style/iv2_white_line"
+        android:layout_below="@id/register_restaurant1_fragment_et_password"
+        android:layout_marginTop="@dimen/dim_60dp"/>
+
+    <EditText
+        android:id="@+id/register_restaurant1_fragment_et_minimum_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_restaurant1_fragment_et_verify_pass"
+        android:hint="@string/minimum_order"
+        android:layout_marginTop="@dimen/album_dp_35"
+        style="@style/et1_style" />
+    <ImageView
+        style="@style/iv2_white_line"
+        android:layout_below="@id/register_restaurant1_fragment_et_verify_pass"
+        android:layout_marginTop="@dimen/dim_60dp"/>
+
+    <EditText
+        android:id="@+id/register_restaurant1_fragment_et_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_restaurant1_fragment_et_minimum_order"
+        android:hint="@string/tips"
+        android:layout_marginTop="@dimen/album_dp_35"
+        style="@style/et1_style" />
+    <ImageView
+        style="@style/iv2_white_line"
+        android:layout_below="@id/register_restaurant1_fragment_et_minimum_order"
+        android:layout_marginTop="@dimen/dim_60dp"/>
+
+    <Button
+        android:id="@+id/register_restaurant1_fragment_btn_butten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btn1_style"
+        android:hint="@string/butten"
+        android:layout_below="@id/register_restaurant1_fragment_et_tips"/>
+</RelativeLayout>

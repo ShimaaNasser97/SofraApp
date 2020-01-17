@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/offer_details_fragment_tv_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/tv_more_text_style"
+    android:text="@string/offerDetails"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_350dp"
+        android:layout_below="@id/offer_details_fragment_tv_text"
+        android:layout_marginTop="@dimen/dim_30dp"
+        android:background="@drawable/et2_shap"
+        android:layout_marginStart="@dimen/dim_10dp"
+        android:layout_marginEnd="@dimen/dim_10dp">
+
+        <TextView
+           android:id="@+id/offer_details_fragment_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dim_30dp"
+            style="@style/tv_more_style"/>
+        <TextView
+            android:id="@+id/offer_details_fragment_tv_discription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dim_30dp"
+            style="@style/tv_more_style"
+            android:layout_below="@id/offer_details_fragment_tv_name"/>
+        <LinearLayout
+            android:id="@+id/offer_details_fragment_ll_lin_from"
+            android:layout_below="@id/offer_details_fragment_tv_discription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dim_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+                style="@style/tv_more_style"/>
+            <TextView
+                android:id="@+id/offer_details_fragment_tv_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_10dp"
+                style="@style/tv_more_style"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/offer_details_fragment_ll_lin_to"
+            android:layout_below="@id/offer_details_fragment_ll_lin_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dim_30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to"
+                style="@style/tv_more_style"/>
+            <TextView
+                android:id="@+id/offer_details_fragment_tv_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_10dp"
+                style="@style/tv_more_style"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/offer_details_fragment_btn_order"
+            android:layout_below="@id/offer_details_fragment_ll_lin_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/btn1_style"
+            android:text="احصل عليه الان"/>
+    </RelativeLayout>
+</RelativeLayout>

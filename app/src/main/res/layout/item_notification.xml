@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_100dp"
+    android:background="@drawable/linear_shap">
+<ImageView
+    android:id="@+id/notification_fragment_iv_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_notifications_not_read"
+    android:layout_centerVertical="true"
+    android:layout_marginStart="@dimen/dim_10dp"/>
+    <TextView
+        android:id="@+id/notification_fragment_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gggggggggggggg"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_toEndOf="@id/notification_fragment_iv_image"/>
+
+    <ImageView
+        android:id="@+id/notification_fragment_iv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_time"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/notification_fragment_tv_time"
+        android:layout_marginEnd="@dimen/dim_10dp"/>
+    <TextView
+        android:id="@+id/notification_fragment_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ffffffffff"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

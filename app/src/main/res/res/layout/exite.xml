@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp">
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="هل انت متأكد من الخروج؟"
+    style="@style/tv_more_style"
+    android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/apoute_app_fragment_btn_yes"
+        android:layout_width="@dimen/dim_70dp"
+        android:layout_height="@dimen/dim_70dp"
+        android:background="@drawable/circil_shape"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dim_30dp"
+        android:text="yes"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/apoute_app_fragment_btn_no"
+        android:layout_width="@dimen/dim_70dp"
+        android:layout_height="@dimen/dim_70dp"
+        android:background="@drawable/circil_shape"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dim_30dp"
+        android:text="no"
+       android:textColor="@color/colorAccent"
+        />
+</RelativeLayout>
